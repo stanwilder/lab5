@@ -54,6 +54,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sumOne = sum(a,b)[0];
+  let totalSum = sum(sumOne, c)[0];
+  let mulOne = multiply(a, b)[0];
+  let totalMul = multiply(mulOne, c)[0];
+  let strThree = `${a} and ${b} and ${c} sum to ${totalSum}.`;
+  let strFour = `The product of ${a} and ${b} and ${c} is ${totalMul}.`;
+  return [totalSum, totalMul, strThree, strFour];
+  // console.log(sumOne);
+  // let sumMul = 
+  // let str3 = `${a} and ${b} and ${c} sum to ${numberMul}.`;
 
 }
 
